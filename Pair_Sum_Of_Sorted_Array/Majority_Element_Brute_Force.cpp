@@ -4,23 +4,20 @@ using namespace std;
 int main()
 {
 	vector<int> v={1,2,1,1,2};
-	int m=0;
-	while(true)
+	for(int i=0;i<v.size();i++)
 	{
-		int target=v[m];
 		int count=0;
-		for(int i=0;i<v.size();i++)
+		for(int j=0;j<v.size();j++)
 		{
-			if(v[i]==target)
+			if(v[i]==v[j])
 			{
 				count++;
 			}
-			if(count>v.size()/2)
-			{
-				cout<<v[i];
-                break;
-			}
 		}
-		m++;		
+		if(count>v.size()/2)
+		{
+			cout<<v[i];
+			break;
+		}
 	}
 }
