@@ -101,5 +101,6 @@ int main()
 		}
 		cout<<endl;
 		cout<<"After 2's Complement:"<<binaryAddition(binary,1);
+		//Show Output
 	}
 }
